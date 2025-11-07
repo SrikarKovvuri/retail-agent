@@ -179,6 +179,13 @@ const defaultInventoryItem = (seed = Date.now()) => ({
   notes: '',
 });
 
+const defaultSupplierContact = (seed = Date.now()) => ({
+  id: seed,
+  name: '',
+  email: '',
+  website: '',
+});
+
 const formatRelativeTime = (timestamp) => {
   if (!timestamp) return '—';
   const date = new Date(timestamp);
@@ -215,6 +222,7 @@ function App() {
     phoneNumber: '',
   });
   const [inventoryItems, setInventoryItems] = useState([defaultInventoryItem()]);
+  const [supplierContacts, setSupplierContacts] = useState([]);
   const [budgetDetails, setBudgetDetails] = useState({
     totalBudget: '',
     preferredVendors: '',
@@ -348,7 +356,21 @@ function App() {
     setInventoryItems((items) => (items.length === 1 ? items : items.filter((item) => item.id !== id)));
   };
 
-  const generateMockSuppliers = (productName, targetPrice, quantity) => {
+  const handleSupplierContactChange = (id, field, value) => {
+    setSupplierContacts((contacts) =>
+      contacts.map((contact) => (contact.id === id ? { ...contact, [field]: value } : contact))
+    );
+  };
+
+  const addSupplierContact = () => {
+    setSupplierContacts((contacts) => [...contacts, defaultSupplierContact(Date.now() + contacts.length)]);
+  };
+
+  const removeSupplierContact = (id) => {
+    setSupplierContacts((contacts) => contacts.filter((contact) => contact.id !== id));
+  };
+
+  const generateMockSuppliers = (productName, targetPrice, quantity, userSuppliers = []) => {
     const basePrice = targetPrice ? Number(targetPrice) : null;
     const mockSupplierNames = [
       'Premium Wholesale Co.',
@@ -360,6 +382,32 @@ function App() {
     ];
 
     const suppliers = [];
+
+    // Add user-provided suppliers first
+    userSuppliers.forEach((contact, index) => {
+      if (contact.name.trim()) {
+        const priceVariation = (Math.random() - 0.2) * 0.15;
+        const calculatedPrice = basePrice
+          ? basePrice * (1 + priceVariation)
+          : 10 + Math.random() * 50;
+
+        suppliers.push({
+          id: `offer-${productName.toLowerCase().replace(/\s+/g, '-')}-user-${contact.id}`,
+          supplierName: contact.name.trim(),
+          email: contact.email.trim() || null,
+          website: contact.website.trim() || null,
+          pricePerUnit: Number(calculatedPrice.toFixed(2)),
+          minimumOrder: Math.max(10, Math.floor(quantity * 0.6)),
+          leadTime: `${3 + Math.floor(Math.random() * 7)} days`,
+          freightTerms: Math.random() > 0.5 ? 'Delivered' : 'FOB - Your Location',
+          status: 'pending',
+          lastUpdated: new Date(Date.now() - Math.random() * 86400000).toISOString(),
+          isUserProvided: true,
+        });
+      }
+    });
+
+    // Add mock suppliers
     const numSuppliers = 3 + Math.floor(Math.random() * 2);
 
     for (let i = 0; i < numSuppliers; i++) {
@@ -395,7 +443,12 @@ function App() {
         .filter((item) => item.productName.trim() && Number(item.quantity) > 0)
         .map((item, index) => {
           const productId = `product-${item.productName.toLowerCase().replace(/\s+/g, '-')}-${index}`;
-          const offers = generateMockSuppliers(item.productName, item.targetPrice, Number(item.quantity));
+          const offers = generateMockSuppliers(
+            item.productName,
+            item.targetPrice,
+            Number(item.quantity),
+            supplierContacts
+          );
 
           const statuses = ['negotiating', 'awaiting-response', 'counter-received'];
           const status = statuses[Math.floor(Math.random() * statuses.length)];
@@ -732,6 +785,68 @@ function App() {
           />
         </label>
       </div>
+      <div className="card-body">
+        <div className="supplier-contacts-section">
+          <h3>Your existing suppliers (optional)</h3>
+          <p className="section-description">
+            Add suppliers you already work with. They'll be included in the negotiation process.
+          </p>
+          <div className="supplier-contacts-list">
+            {supplierContacts.map((contact, index) => (
+              <div className="supplier-contact-item" key={contact.id}>
+                <div className="supplier-contact-header">
+                  <h4>Supplier {index + 1}</h4>
+                  <button
+                    type="button"
+                    className="ghost-button"
+                    onClick={() => removeSupplierContact(contact.id)}
+                  >
+                    Remove
+                  </button>
+                </div>
+                <div className="grid three-column">
+                  <label className="field">
+                    <span>Supplier name</span>
+                    <input
+                      type="text"
+                      value={contact.name}
+                      onChange={(event) =>
+                        handleSupplierContactChange(contact.id, 'name', event.target.value)
+                      }
+                      placeholder="Ex: ABC Wholesale"
+                    />
+                  </label>
+                  <label className="field">
+                    <span>Email</span>
+                    <input
+                      type="email"
+                      value={contact.email}
+                      onChange={(event) =>
+                        handleSupplierContactChange(contact.id, 'email', event.target.value)
+                      }
+                      placeholder="contact@supplier.com"
+                    />
+                  </label>
+                  <label className="field">
+                    <span>Website</span>
+                    <input
+                      type="url"
+                      value={contact.website}
+                      onChange={(event) =>
+                        handleSupplierContactChange(contact.id, 'website', event.target.value)
+                      }
+                      placeholder="https://supplier.com"
+                    />
+                  </label>
+                </div>
+              </div>
+            ))}
+          </div>
+          <button type="button" className="secondary-button" onClick={addSupplierContact}>
+            + Add supplier contact
+          </button>
+        </div>
+      </div>
       <footer className="card-footer">
         <StepControls
           canAdvance={canAdvance}
@@ -887,7 +1002,12 @@ function App() {
                   >
                     <span className="offer-rank">#{index + 1}</span>
                     <div className="offer-main">
-                      <h3>{offer.supplierName}</h3>
+                      <div className="offer-main-header">
+                        <h3>{offer.supplierName}</h3>
+                        {offer.isUserProvided && (
+                          <span className="status-pill user-provided">Your contact</span>
+                        )}
+                      </div>
                       <div className="offer-meta">
                         <span className="offer-price">
                           {offer.pricePerUnit != null ? `$${offer.pricePerUnit.toFixed(2)}/unit` : '—'}
@@ -896,6 +1016,30 @@ function App() {
                         {offer.leadTime && <span>{offer.leadTime}</span>}
                         {offer.freightTerms && <span>{offer.freightTerms}</span>}
                       </div>
+                      {(offer.email || offer.website) && (
+                        <div className="offer-contact-info">
+                          {offer.email && (
+                            <span className="contact-link">
+                              <strong>Email:</strong>{' '}
+                              <a href={`mailto:${offer.email}`} target="_blank" rel="noopener noreferrer">
+                                {offer.email}
+                              </a>
+                            </span>
+                          )}
+                          {offer.website && (
+                            <span className="contact-link">
+                              <strong>Website:</strong>{' '}
+                              <a
+                                href={offer.website.startsWith('http') ? offer.website : `https://${offer.website}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                {offer.website.replace(/^https?:\/\//, '')}
+                              </a>
+                            </span>
+                          )}
+                        </div>
+                      )}
                     </div>
                     <div className="offer-status">
                       <span className={`status-pill offer ${offer.status}`}>
