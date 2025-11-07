@@ -1,0 +1,31 @@
+supplier_id,company_name,country,city,price_usd_per_liter,min_order_liters,lead_time_days,certification,rating,email,phone,website,flavors_available,notes
+Y001,Fresh Farms,France,Paris,4.17,1000,20,Non-GMO,4.46,sales@fresh.farmsfr.org,+33-5502-2585,https://www.freshfarms.net,"Plain, Strawberry, Blueberry",local distributor only
+Y002,Creamy Cultures,Turkey,Istanbul,3.14,100,5,Organic,4.71,sales@creamy.culturestu.net,+90-2046-9747,https://www.creamycultures.co,"Honey, Greek, Mixed Berry",seasonal milk variations
+Y003,Farmhouse Yogurt Co,New Zealand,Wellington,3.57,1000,30,Fairtrade,3.26,sales@farmhouse.yogurt.cone.org,+64-6897-8658,https://www.farmhouseyogurtco.net,"Plain, Strawberry, Blueberry",local distributor only
+Y004,Golden Creamery,Germany,Berlin,3.19,1000,14,ISO9001,5.0,sales@golden.creameryge.org,+49-5039-1505,https://www.goldencreamery.biz,Assorted fruit flavors,seasonal milk variations
+Y005,Fresh Farms Ltd,Brazil,Brasília,2.27,250,7,None,3.24,sales@fresh.farms.ltdbr.org,+55-7670-0273,https://www.freshfarmsltd.co,"Honey, Greek, Mixed Berry",local distributor only
+Y006,River Dairy,France,Toulouse,1.98,1000,5,Organic,3.26,sales@river.dairyfr.org,+33-6186-0547,https://www.riverdairy.org,"Honey, Greek, Mixed Berry",local distributor only
+Y007,Mountain Dairy,Greece,Thessaloniki,3.6,250,30,Organic,3.86,sales@mountain.dairygr.com,+30-0868-4246,https://www.mountaindairy.org,"Honey, Greek, Mixed Berry",seasonal milk variations
+Y008,Creamy Creamery,New Zealand,Christchurch,3.46,100,10,Fairtrade,4.13,sales@creamy.creameryne.biz,+64-7460-2858,https://www.creamycreamery.net,"Honey, Greek, Mixed Berry",seasonal milk variations
+Y009,Creamy Nutrition,Germany,Munich,1.72,500,20,None,4.11,sales@creamy.nutritionge.net,+49-3546-0813,https://www.creamynutrition.com,"Vanilla, Mango",export-ready
+Y010,Organic Yogurt Co Ltd,France,Toulouse,2.17,2000,7,Non-GMO,4.85,sales@organic.yogurt.co.ltdfr.biz,+33-7604-9756,https://www.organicyogurtcoltd.org,"Vanilla, Mango",seasonal milk variations
+Y011,Fresh Cultures,New Zealand,Christchurch,3.11,500,14,Non-GMO,3.89,sales@fresh.culturesne.co,+64-6553-7532,https://www.freshcultures.com,Plain only,local distributor only
+Y012,Ever Farms,Greece,Patras,1.18,500,20,Non-GMO,4.04,sales@ever.farmsgr.org,+30-5060-9641,https://www.everfarms.co,"Vanilla, Mango",local distributor only
+Y013,Golden Delights,New Zealand,Wellington,4.16,2000,10,Non-GMO,4.16,sales@golden.delightsne.co,+64-0210-6727,https://www.goldendelights.biz,Assorted fruit flavors,custom packaging
+Y014,Mountain Agro,India,Ahmedabad,2.05,2000,10,None,4.99,sales@mountain.agroin.org,+91-0563-1442,https://www.mountainagro.co,Plain only,bulk discount available
+Y015,Organic Dairy Ltd,Brazil,Brasília,1.17,2000,7,Organic,4.3,sales@organic.dairy.ltdbr.co,+55-7734-8117,https://www.organicdairyltd.org,"Honey, Greek, Mixed Berry",custom packaging
+Y016,Ever Foods,Turkey,Ankara,2.01,100,20,None,4.96,sales@ever.foodstu.biz,+90-6852-7233,https://www.everfoods.com,"Vanilla, Mango",custom packaging
+Y017,Creamy Producers,USA,Madison,1.85,250,30,Non-GMO,3.25,sales@creamy.producersus.biz,+1-4241-4538,https://www.creamyproducers.co,"Vanilla, Mango",local distributor only
+Y018,Pure Producers,India,Ahmedabad,1.97,2000,7,BRC,3.42,sales@pure.producersin.biz,+91-1704-2712,https://www.pureproducers.co,Assorted fruit flavors,seasonal milk variations
+Y019,Fresh Delights,Canada,Vancouver,1.91,100,20,Non-GMO,4.78,sales@fresh.delightsca.com,+1-9513-6262,https://www.freshdelights.net,"Plain, Strawberry, Blueberry",custom packaging
+Y020,Creamy Agro Ltd,USA,Madison,2.82,1000,5,Organic,4.92,sales@creamy.agro.ltdus.com,+1-2171-2057,https://www.creamyagroltd.net,"Vanilla, Mango",custom packaging
+Y021,River Agro,Greece,Athens,1.59,1000,10,BRC,3.43,sales@river.agrogr.net,+30-0081-1343,https://www.riveragro.com,Assorted fruit flavors,seasonal milk variations
+Y022,Golden Producers,Canada,Vancouver,1.41,100,20,Non-GMO,3.88,sales@golden.producersca.co,+1-5505-8041,https://www.goldenproducers.net,Assorted fruit flavors,export-ready
+Y023,Farmhouse Foods,New Zealand,Wellington,2.45,250,7,Fairtrade,3.67,sales@farmhouse.foodsne.co,+64-6748-8260,https://www.farmhousefoods.com,"Vanilla, Mango",custom packaging
+Y024,Mountain Creamery,France,Lyon,2.43,500,5,None,4.32,sales@mountain.creameryfr.com,+33-5045-2461,https://www.mountaincreamery.org,Assorted fruit flavors,bulk discount available
+Y025,Ever Foods Ltd,Germany,Berlin,2.52,500,14,None,4.9,sales@ever.foods.ltdge.net,+49-0119-1765,https://www.everfoodsltd.net,"Vanilla, Mango",local distributor only
+Y026,Fresh Producers,India,Pune,2.98,250,5,None,3.42,sales@fresh.producersin.net,+91-8462-6410,https://www.freshproducers.org,Plain only,export-ready
+Y027,Organic Dairy,Canada,Montreal,2.1,500,5,Organic,3.32,sales@organic.dairyca.net,+1-4436-3706,https://www.organicdairy.net,"Vanilla, Mango",bulk discount available
+Y028,Ever Yogurt Co,France,Paris,1.31,2000,30,ISO9001,4.87,sales@ever.yogurt.cofr.biz,+33-8513-1708,https://www.everyogurtco.com,"Vanilla, Mango",bulk discount available
+Y029,Happy Nutrition,France,Toulouse,2.52,1000,20,Organic,3.47,sales@happy.nutritionfr.biz,+33-5266-1103,https://www.happynutrition.net,Assorted fruit flavors,export-ready
+Y030,Mountain Nutrition Ltd,Turkey,Izmir,2.21,2000,30,Non-GMO,3.38,sales@mountain.nutrition.ltdtu.org,+90-1099-2899,https://www.mountainnutritionltd.net,Assorted fruit flavors,local distributor only

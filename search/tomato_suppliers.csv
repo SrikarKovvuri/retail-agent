@@ -1,0 +1,31 @@
+supplier_id,company_name,country,city,price_usd_per_kg,min_order_kg,lead_time_days,certification,rating,email,phone,website,tomato_variety,packaging_type,notes
+T001,Golden Growers,Italy,Naples,1.07,1000,14,Fairtrade,4.84,contact@golden.growersit.biz,+39-6673-0846,https://www.goldengrowers.com,Heirloom,Cartons,bulk discount available
+T002,Pure Produce,Mexico,Sinaloa,1.16,10000,7,None,3.15,contact@pure.produceme.com,+52-4753-8638,https://www.pureproduce.co,Roma,Plastic bags,organic farming methods
+T003,Prime Distributors,Spain,Murcia,1.48,2000,10,None,3.74,contact@prime.distributorssp.co,+34-1202-7861,https://www.primedistributors.co,Roma,Cartons,seasonal availability
+T004,Green Co Ltd,India,Bangalore,1.73,10000,10,Fairtrade,3.88,contact@green.co.ltdin.biz,+91-5595-6348,https://www.greencoltd.org,Roma,Loose bulk,bulk discount available
+T005,Golden Produce,Mexico,Sonora,0.57,1000,14,None,4.73,contact@golden.produceme.org,+52-2895-0994,https://www.goldenproduce.net,Cherry,Loose bulk,greenhouse grown
+T006,Fresh Exports,Brazil,Campinas,1.61,2000,7,Organic,4.45,contact@fresh.exportsbr.biz,+55-4092-2314,https://www.freshexports.co,Plum,Cartons,bulk discount available
+T007,Valley Exports,Turkey,Adana,1.15,1000,3,None,4.77,contact@valley.exportstu.co,+90-2421-1240,https://www.valleyexports.org,Roma,Plastic bags,greenhouse grown
+T008,Pure Suppliers Ltd,India,Bangalore,1.26,2000,7,Organic,4.06,contact@pure.suppliers.ltdin.co,+91-0624-8405,https://www.puresuppliersltd.org,Roma,Crates,organic farming methods
+T009,Valley Co,USA,Sacramento,1.41,1000,7,None,3.71,contact@valley.cous.org,+1-5233-1205,https://www.valleyco.co,Grape,Cartons,bulk discount available
+T010,Sunny Exports,Mexico,Sonora,0.36,5000,10,Organic,3.02,contact@sunny.exportsme.com,+52-3561-9682,https://www.sunnyexports.biz,Beefsteak,Cartons,export-ready
+T011,Harvest Co,Brazil,Campinas,1.41,5000,3,Organic,3.4,contact@harvest.cobr.net,+55-3377-8229,https://www.harvestco.biz,Cherry,Boxes,seasonal availability
+T012,Sunny Distributors Ltd,China,Henan,0.83,2000,5,None,3.28,contact@sunny.distributors.ltdch.biz,+86-1933-1941,https://www.sunnydistributorsltd.net,Beefsteak,Plastic bags,bulk discount available
+T013,Sunny Trading,China,Henan,0.54,500,7,GlobalG.A.P.,4.7,contact@sunny.tradingch.org,+86-1921-1537,https://www.sunnytrading.org,Plum,Boxes,export-ready
+T014,Fresh Foods,Brazil,Fortaleza,1.15,2000,14,None,3.62,contact@fresh.foodsbr.biz,+55-7822-2492,https://www.freshfoods.org,Roma,Crates,bulk discount available
+T015,Pure Distributors,Italy,Naples,1.19,10000,3,Organic,4.16,contact@pure.distributorsit.biz,+39-0309-9282,https://www.puredistributors.co,Beefsteak,Boxes,seasonal availability
+T016,Prime Market Ltd,Morocco,Casablanca,0.48,1000,14,None,3.68,contact@prime.market.ltdmo.net,+212-5547-2709,https://www.primemarketltd.biz,Grape,Crates,export-ready
+T017,Red Produce,China,Henan,1.67,5000,3,Fairtrade,3.88,contact@red.producech.com,+86-9312-7299,https://www.redproduce.net,Plum,Cartons,organic farming methods
+T018,Pure Foods,USA,Miami,0.51,10000,7,ISO22000,3.69,contact@pure.foodsus.net,+1-3319-2776,https://www.purefoods.org,Heirloom,Cartons,organic farming methods
+T019,Sunny Farms,Italy,Parma,0.92,1000,5,Organic,3.91,contact@sunny.farmsit.net,+39-7742-3829,https://www.sunnyfarms.com,Grape,Plastic bags,bulk discount available
+T020,Pure Market Ltd,Spain,Murcia,1.36,2000,3,GlobalG.A.P.,3.37,contact@pure.market.ltdsp.net,+34-5325-8959,https://www.puremarketltd.org,Grape,Boxes,organic farming methods
+T021,Harvest Produce,Italy,Naples,0.83,10000,14,Organic,4.61,contact@harvest.produceit.net,+39-3648-9035,https://www.harvestproduce.biz,Grape,Crates,organic farming methods
+T022,Golden Exports,Brazil,Fortaleza,0.63,2000,3,Organic,4.75,contact@golden.exportsbr.co,+55-6839-2290,https://www.goldenexports.co,Cherry,Boxes,seasonal availability
+T023,Fresh Co,Brazil,Campinas,1.54,10000,7,Fairtrade,4.27,contact@fresh.cobr.co,+55-4226-7155,https://www.freshco.org,Roma,Cartons,bulk discount available
+T024,Green Foods Ltd,USA,Sacramento,1.11,2000,5,Organic,4.88,contact@green.foods.ltdus.org,+1-7645-7869,https://www.greenfoodsltd.com,Roma,Plastic bags,greenhouse grown
+T025,Pure Suppliers,India,Bangalore,0.56,1000,14,Organic,4.07,contact@pure.suppliersin.co,+91-2242-5268,https://www.puresuppliers.com,Heirloom,Cartons,organic farming methods
+T026,Harvest Trading,India,Pune,1.55,10000,10,Organic,4.0,contact@harvest.tradingin.biz,+91-2431-1956,https://www.harvesttrading.biz,Plum,Loose bulk,bulk discount available
+T027,Sunny Exports,USA,Sacramento,1.76,2000,5,Organic,4.92,contact@sunny.exportsus.net,+1-5698-1365,https://www.sunnyexports.net,Grape,Crates,bulk discount available
+T028,Golden Growers Ltd,Mexico,Sonora,0.49,1000,3,None,4.02,contact@golden.growers.ltdme.biz,+52-9038-1446,https://www.goldengrowersltd.biz,Cherry,Loose bulk,greenhouse grown
+T029,Green Market,Egypt,Alexandria,0.97,10000,5,None,3.88,contact@green.marketeg.biz,+20-6037-6966,https://www.greenmarket.org,Heirloom,Boxes,greenhouse grown
+T030,Green Trading,China,Henan,1.62,500,7,Fairtrade,3.7,contact@green.tradingch.co,+86-3502-2852,https://www.greentrading.co,Beefsteak,Loose bulk,organic farming methods
