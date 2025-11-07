@@ -1,0 +1,31 @@
+supplier_id,company_name,country,city,price_usd_per_kg,min_order_kg,lead_time_days,certification,rating,email,phone,website,notes
+S001,Sunrise Grains,USA,Houston,1.02,1000,3,None,3.05,sales@sunrise.grainsus.biz,+1-6001-3389,https://www.sunrisegrains.net,offers sample packs
+S002,Ocean Supplies,Egypt,Damietta,1.13,100,30,None,3.19,sales@ocean.supplieseg.asia,+20-5423-5116,https://www.oceansupplies.co,offers sample packs
+S003,Green Grains,Egypt,Damietta,0.84,50,21,None,4.97,sales@green.grainseg.co,+20-9593-1034,https://www.greengrains.net,bulk discount available
+S004,Ocean Agritech,Egypt,Damietta,2.74,200,30,Organic,4.98,sales@ocean.agritecheg.com,+20-9283-2764,https://www.oceanagritech.biz,ships internationally
+S005,Harvest Grains Ltd,Pakistan,Lahore,2.13,50,7,BRC,3.49,sales@harvest.grains.ltdpa.biz,+92-5376-7242,https://www.harvestgrainsltd.biz,offers sample packs
+S006,Green Resources,Italy,Venice,1.7,1000,14,Fairtrade,3.76,sales@green.resourcesit.com,+39-0122-6916,https://www.greenresources.asia,offers sample packs
+S007,Green Produce,Thailand,Ayutthaya,1.97,1000,10,None,4.52,sales@green.produceth.co,+66-1462-7048,https://www.greenproduce.biz,bulk discount available
+S008,Green Produce,Australia,Sydney,0.89,1000,21,None,3.12,sales@green.produceau.com,+61-9570-1543,https://www.greenproduce.biz,bulk discount available
+S009,Sunrise Trading,Vietnam,Can Tho,2.66,1000,7,Organic,4.99,sales@sunrise.tradingvi.co,+84-8963-8346,https://www.sunrisetrading.co,seasonal supply constraints
+S010,Ever Trading Ltd,Vietnam,Ho Chi Minh City,1.2,100,21,Fairtrade,4.03,sales@ever.trading.ltdvi.net,+84-0103-1051,https://www.evertradingltd.co,seasonal supply constraints
+S011,Island Produce,India,Mumbai,2.38,500,7,ISO22000,3.93,sales@island.producein.asia,+91-6311-6566,https://www.islandproduce.com,bulk discount available
+S012,Golden Market,Brazil,Santos,1.37,500,7,Organic,4.67,sales@golden.marketbr.co,+55-7317-8108,https://www.goldenmarket.com,ships internationally
+S013,River Market,Egypt,Alexandria,1.01,50,7,BRC,3.31,sales@river.marketeg.asia,+20-0647-4687,https://www.rivermarket.co,ships internationally
+S014,Golden Resources,Nigeria,Lagos,2.68,1000,21,Organic,3.81,sales@golden.resourcesni.net,+234-0812-1913,https://www.goldenresources.biz,ships internationally
+S015,Silver Resources Ltd,Thailand,Ayutthaya,0.76,1000,21,None,3.91,sales@silver.resources.ltdth.co,+66-4353-4624,https://www.silverresourcesltd.com,bulk discount available
+S016,Prime Resources,Australia,Sydney,0.82,200,3,Fairtrade,3.02,sales@prime.resourcesau.net,+61-5427-8498,https://www.primeresources.biz,local distributor only
+S017,Sunrise Foods,USA,Houston,2.29,100,10,None,4.81,sales@sunrise.foodsus.co,+1-9353-4874,https://www.sunrisefoods.com,bulk discount available
+S018,Ocean Agritech,Thailand,Bangkok,1.78,100,30,Organic,3.07,sales@ocean.agritechth.asia,+66-8680-1128,https://www.oceanagritech.co,offers sample packs
+S019,Ever Foods,Italy,Milan,0.84,50,10,Fairtrade,4.73,sales@ever.foodsit.net,+39-3158-6923,https://www.everfoods.net,seasonal supply constraints
+S020,Golden Foods Ltd,Brazil,Recife,2.12,100,10,None,3.61,sales@golden.foods.ltdbr.net,+55-1607-3375,https://www.goldenfoodsltd.net,ships internationally
+S021,Golden Supplies,Italy,Rome,1.56,200,30,Organic,4.93,sales@golden.suppliesit.biz,+39-6850-1429,https://www.goldensupplies.co,bulk discount available
+S022,Sunrise Resources,Italy,Rome,2.32,1000,3,Fairtrade,4.37,sales@sunrise.resourcesit.asia,+39-9340-6088,https://www.sunriseresources.net,local distributor only
+S023,Ocean Rice Co,Brazil,Belem,1.2,200,21,None,4.33,sales@ocean.rice.cobr.co,+55-6564-8236,https://www.oceanriceco.asia,ships internationally
+S024,Silver Resources,USA,Sacramento,2.03,500,21,Organic,4.32,sales@silver.resourcesus.biz,+1-5777-3872,https://www.silverresources.co,offers sample packs
+S025,Silver Exports Ltd,Vietnam,Ho Chi Minh City,2.05,50,3,Fairtrade,3.99,sales@silver.exports.ltdvi.net,+84-7917-6936,https://www.silverexportsltd.net,ships internationally
+S026,Golden Rice Co,Italy,Milan,0.93,1000,14,None,4.19,sales@golden.rice.coit.com,+39-8317-2788,https://www.goldenriceco.asia,offers sample packs
+S027,Ever Market,Nigeria,Port Harcourt,2.3,500,14,None,4.43,sales@ever.marketni.co,+234-3487-3471,https://www.evermarket.net,local distributor only
+S028,Harvest Exports,Nigeria,Lagos,1.02,100,3,Fairtrade,3.78,sales@harvest.exportsni.asia,+234-6587-6036,https://www.harvestexports.biz,bulk discount available
+S029,Silver Market,Egypt,Cairo,2.7,500,21,Fairtrade,3.78,sales@silver.marketeg.biz,+20-9373-4670,https://www.silvermarket.asia,ships internationally
+S030,Prime Foods Ltd,Australia,Darwin,0.65,1000,30,BRC,3.65,sales@prime.foods.ltdau.com,+61-1627-2046,https://www.primefoodsltd.asia,local distributor only
